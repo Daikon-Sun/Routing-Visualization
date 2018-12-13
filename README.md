@@ -4,7 +4,7 @@
 # Visualization Tools for Physical Design Routing
 Two sets of visualization tools written in python3 for routing in physical design.
 
-Users are able to zoom in/out, turn on/off objects, and drag around.
+Users are able to zoom in/out, turn on/off objects, drag around, and clicked on objects (only in 2d-visualize).
 
 ## Table of Contents
 
