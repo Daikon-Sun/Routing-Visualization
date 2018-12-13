@@ -14,7 +14,7 @@ if len(sys.argv) < 2:
     exit()
 
 vis_all = len(sys.argv) == 2
-filename = 'benchmarks/' + sys.argv[1] + '.input'
+filename = sys.argv[1]
 scale = 1
 max_total_layer = 8
 nrows = 2
@@ -27,14 +27,11 @@ def randColor():
     return '#' + ''.join([random.choice('0123456789ABCDEF') for i in range(6)])
 
 #                   (On/Off, color, alpha, linewidth)
-vis = {'obs':       (True, '#222222', 1, 2),
-       'bus':       (True, layer_colors, 1, 2),
-       'track':     (True, layer_colors, 1, 1),
-       'tw':        (False, layer_colors, 0.5, 0),
-       'cp':	    (False, '#000000', 1, 2),
-       'flow':	    (False, '#00FF00', 1, 2),
-       'floww':	    (True, '#00FF00', 1, 2),
-       'astar':	    (False, '#0000FF', 1, 1)}
+vis = {
+    'obs':       (True, '#222222', 1, 2),
+    'bus':       (True, layer_colors, 1, 2),
+    'track':     (True, layer_colors, 1, 1)
+}
 
 bus_names = set([sys.argv[i] for i in range(2, len(sys.argv))])
 bus_names.add('__ALL__')
@@ -93,7 +90,7 @@ def add_objs(xyzss, liness, rectss, obj_type, busname, bitname, color, alpha, li
             obj = ax.add_collection(coll)
             add_obj(obj, z, k, busname, bitname)
 
-
+mnx, mny, mxx, mxy = 10**99, 10**99, -10**99, -10**99
 for k, v in vis.items():
     if not v[0]:
         continue
@@ -134,6 +131,8 @@ for k, v in vis.items():
                 y0 = y1 = int(content[1]) / scale
                 z0 = z1 = int(content[2])
 
+            mnx, mny, mxx, mxy = min(mnx, x0), min(mny, y0), max(mxx, x1), max(mxy, y1)
+
             if len(content) == 3:
                 xyzss[z0][0].append(x0)
                 xyzss[z0][1].append(y0)
@@ -146,16 +145,6 @@ for k, v in vis.items():
 
     if cur_busname is not None:
         add_objs(xyzss, liness, rectss, k, cur_busname, cur_bitname, v[1], v[2], v[3])
-
-with open(filename, 'r') as f:
-    for line in f:
-        l = line.replace('(', '').replace(')', '').split()
-        if l[0] == 'DESIGN_BOUNDARY':
-            mnx = int(l[1])
-            mny = int(l[2])
-            mxx = int(l[3])
-            mxy = int(l[4])
-            break
 
 for z in range(1, max_layer+1):
     ax.plot([mnx, mxx, mxx, mnx, mnx], [mny, mny, mxy, mxy, mny], [z] * 5, color='gray', alpha=0.4, linewidth=5)

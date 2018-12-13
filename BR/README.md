@@ -75,10 +75,12 @@ python3 2d_visualize.py example/example bus_1
 python3 3d_visualize.py example/example
 ```
 
+![aaa](https://github.com/Daikon-Sun/Routing-Visualization/raw/master/BR/BR.png).
+
 ## Additional Informations
 Because 3d_visualize uses matplotlib, it cannot handle very-large scale inputs.
 
-It is suitable for inputs with less than 10^5-10^6 items (i.e. lines).
+It is suitable for inputs with less than 10^5-10^6 items (i.e. lines of text).
 
 On the other hand, 2d_visualize uses pyQt, so it's quite efficient.
 

@@ -1,6 +1,8 @@
 # Visualization Tools for Physical Design Routing
 Two set of visualization tools written in python3 for physical design routing.
 
+Users are able to zoom in/out, turn on/off objects, and drag around.
+
 ## Table of Contents
 
 - IDR (Initial Detailed Routing): for [International Symposium on Physical Design (ISPD) 2018 Contest on Initial Detailed Routing](http://www.ispd.cc/contests/18/index.html).
