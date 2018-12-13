@@ -34,13 +34,15 @@ Example file formats can be found in the directory `example`.
 
 ## Usage
 ```
-python3 {} filename [bus_name1 busname_2 ...]
+python3 {} filename [bus_name1 bus_name2 ...]
 ```
 [bus_name1, bus_name2 ...] is the subset of all buses that you want to visualize.
 If the subset is empty, all buses will be considered.
 
 ### 2d_visualize.py
 Use scroll wheel to zoom in/out and left mouse button to drag around.
+
+Double click on anywhere to unveil the information at the clicked coordinates.
 
 ### 3d_visualize.py
 Use right mouse button to zoom in/out and left mouse button to rotate.
@@ -81,10 +83,10 @@ python3 3d_visualize.py example/example
 ```
 
 ## Additional Informations
-Because 3d_visualize uses **matplotlib**, it cannot handle very-large scale inputs.
+Because 3d_visualize.py uses **matplotlib**, it cannot handle very-large scale inputs.
 
 It is suitable for inputs with less than 10^5-10^6 items (i.e. lines of text).
 
-On the other hand, 2d_visualize uses **pyQt5**, so it's quite efficient.
+On the other hand, 2d_visualize.py uses **pyQt5**, so it's quite efficient.
 
 It can handle inputs up to 10^7-10^8 items, or even 10^9 if you have great CPUs.

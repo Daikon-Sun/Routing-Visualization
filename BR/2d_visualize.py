@@ -22,7 +22,7 @@ area.addDock(button_dock)
 area.addDock(vis_dock, 'left', button_dock)
 
 if len(sys.argv) < 2:
-    print('usage : python {} test_case_name [bus_name1 bus_name2 ...]'.format(__file__))
+    print('usage : python3 {} test_case_name [bus_name1 bus_name2 ...]'.format(__file__))
     print('if no bus_name is typed, all buses will be considered')
     exit()
 
