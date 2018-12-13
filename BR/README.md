@@ -43,6 +43,7 @@ Use right mouse button to zoom in/out and left mouse button to rotate.
 ## Setup
 There is a dictionary in the file named *vis*, and you have to first set up the entries in *vis*.
 The program will read several input files according to the list of 'name's in *vis*.
+
 That is, the input filenames will be [filename + '.' + 'name1', filename + '.' + 'name2', ...].
 
 ### 2d_visualize.py
@@ -76,6 +77,9 @@ python3 3d_visualize.py example/example
 
 ## Additional Informations
 Because 3d_visualize uses matplotlib, it cannot handle very-large scale inputs.
-It is suitable for inputs with less than 10^5--10^6 items (i.e. lines).
+
+It is suitable for inputs with less than 10^5-10^6 items (i.e. lines).
+
 In the other hand, 2d_visualize uses pyQt, so it's quite efficient.
-It can handle inputs up to 10^7--10^8 items, or 10^9 if you have great CPUs.
+
+It can handle inputs up to 10^7-10^8 items, or even 10^9 if you have great CPUs.
