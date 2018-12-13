@@ -5,6 +5,8 @@
 
 ## Required Packages and Versions
 - python3 >= 3.6
+
+### Python Packages
 - pyqtgraph >= 0.10.0
 - **PyQt5 >= 5.11.2**
 - numpy
@@ -52,20 +54,20 @@ That is, the input filenames will be [filename + '.' + 'name1', filename + '.' +
 ### 2d_visualize.py
 Each entry in *vis* is formatted as: 
 ```
-'name' : (On/OFF, linewidth, symbol)
+'name' : (On/Off, linewidth, symbol)
 ```
 - 'name': the description of the set of objects,
-- On/OFF: True or False that determined if the program is going to visualize 'name'
+- On/Off: True or False that determined if the program is going to visualize 'name'
 - linewidth: the linewidth for line items.
 - symbol: for point items, choose one symbol from ['o', 't', 't1', 't2', 't3', 's', 'p', 'h', 'star', '+', 'd']. For example, 'o' is a circle and 't' is a triangle.
 
 ### 3d_visualize.py
 Each entry in *vis* is formatted as: 
 ```
-'name' : (On/OFF, color, alpha, linewidth)
+'name' : (On/Off, color, alpha, linewidth)
 ```
 - 'name': the description of the set of objects,
-- On/OFF: True or False that determined if the program is going to visualize 'name'
+- On/Off: True or False that determined if the program is going to visualize 'name'
 - color: a color code such as '#000000' or a function/list/tuple that accepts an integer (the z value) and returns a color code.
 - alpha: 1 is opaque and 0 is transparent.
 - linewidth: the linewidth for line items.
