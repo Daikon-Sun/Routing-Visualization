@@ -29,6 +29,7 @@ Use three numbers to denote a point and six numbers to denote anything else.
 For obstalces, tracks, or anything else that does not belong to a bus and bit,
 use '\_\_ALL\_\_' to replace bus_name and bit_name.
 
+Example file formats can be found in the direction `example`.
 
 ### 2d_visualize
 There is a dictionary in the file named *vis*.
