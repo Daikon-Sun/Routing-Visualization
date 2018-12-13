@@ -1,5 +1,5 @@
 ![img](https://github.com/Daikon-Sun/Routing-Visualization/raw/master/BR/BR.png)
-*Example visualization by 2d_visualize.py (left) and 3d_visualize.py (right).*
+*Example visualizations by 2d_visualize.py (left) and 3d_visualize.py (right).*
 
 # Visualization Tool for Bus Routing
 
