@@ -10,4 +10,4 @@ Users are able to zoom in/out, turn on/off objects, and drag around.
 - BR (Bus Routing): for [CAD Contest Problem B at International Conference On Computer Aided Design (ICCAD) 2018 on Obstacle-Aware On-Track Bus Routing](http://iccad-contest.org/2018/index.html).
 
 ## Acknowledgement
-Thanks for the supports from [Electricial Engineering Department at National Taiwan University](https://web.ee.ntu.edu.tw/eng/index.php) and [Prof. Yao-Wen Chang](http://cc.ee.ntu.edu.tw/~ywchang/).
+Thanks for the supports from [Electricial Engineering Department](https://web.ee.ntu.edu.tw/eng/index.php) at [National Taiwan University](http://www.ntu.edu.tw/english/) and [Prof. Yao-Wen Chang](http://cc.ee.ntu.edu.tw/~ywchang/).
