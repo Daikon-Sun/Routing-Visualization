@@ -27,7 +27,7 @@ if len(sys.argv) < 2:
     exit()
 
 vis_all = len(sys.argv) == 2
-filename = 'benchmarks/' + sys.argv[1] + '.input'
+filename = sys.argv[1]
 max_total_layer = 6
 nrows = 2
 
@@ -39,15 +39,7 @@ layer_colors = list(map(lambda x:(int(x[1][0]*255),int(x[1][1]*255),int(x[1][2]*
 vis = {
     'track':     (True,  1, None),
     'obs':       (True,  6, None),
-    'bus':       (True,  6, None),
-    'tw':        (False, 0, None),
-    'cp':        (False, 9, 's'),
-    'pt':        (False, 2, None),
-    'astar':     (False, 4, None),
-    'asw':       (False, 2, None),
-    'gd':        (False, 4, None),
-    'flow':      (True, 3, None),
-    'floww':     (False, 2, None)
+    'bus':       (True,  6, None)
 }
 
 bus_names = set([sys.argv[i] for i in range(2, len(sys.argv))])
@@ -162,15 +154,15 @@ for k, v in vis.items():
                 x0, y0, z0, x1, y1, z1 = map(int, content)
             else:
                 x0, y0, z0 = map(int, content)
-                x1, y1, z1 = x0+10, y0+10, z0+10
+                x1, y1, z1 = x0, y0, z0
 
-            # if len(content) == 3 or (x0 == x1 and y0 == y1):
-            #     xyss[z0][0].append(x0)
-            #     xyss[z0][1].append(y0)
-            #     if len(content) == 6:
-            #         xyss[z1][0].append(x0)
-            #         xyss[z1][1].append(y0)
-            if x0 == x1 or y0 == y1:
+            if len(content) == 3 or (x0 == x1 and y0 == y1):
+                xyss[z0][0].append(x0)
+                xyss[z0][1].append(y0)
+                if len(content) == 6:
+                    xyss[z1][0].append(x0)
+                    xyss[z1][1].append(y0)
+            elif x0 == x1 or y0 == y1:
                 liness[z0][0].extend([x0, x1])
                 liness[z0][1].extend([y0, y1])
             else:
