@@ -60,4 +60,4 @@ python3 3d_visualize.py example/example net1230
 ## Additional Informations
 Because 3d_visualize uses **matplotlib**, it cannot handle very-large scale inputs.
 
-It is suitable for inputs with less than 10^5-10^6 items (i.e. lines of text).
+It is suitable for inputs with less than 10^5~10^6 items (i.e. lines of text).
