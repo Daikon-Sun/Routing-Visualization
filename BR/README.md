@@ -1,3 +1,6 @@
+![img](https://github.com/Daikon-Sun/Routing-Visualization/raw/master/BR/BR.png)
+*Left: 2d_visualize.py Right: 3d_visualize.py*
+
 # Visualization Tool for Bus Routing
 
 ## Required Packages and Versions
@@ -74,8 +77,6 @@ python3 2d_visualize.py example/example
 python3 2d_visualize.py example/example bus_1
 python3 3d_visualize.py example/example
 ```
-
-![aaa](https://github.com/Daikon-Sun/Routing-Visualization/raw/master/BR/BR.png).
 
 ## Additional Informations
 Because 3d_visualize uses matplotlib, it cannot handle very-large scale inputs.
