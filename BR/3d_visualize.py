@@ -112,7 +112,7 @@ for k, v in vis.items():
                 if vis_all and cur_busname not in bus_names:
                     bus_names.add(cur_busname)
                     bus_obj_list[cur_busname] = dict()
-                if cur_bitname not in bus_obj_list[cur_busname]:
+                if cur_busname in bus_names and cur_bitname not in bus_obj_list[cur_busname]:
                     bus_obj_list[cur_busname][cur_bitname] = []
         else:
             assert len(content) == 6 or len(content) == 3

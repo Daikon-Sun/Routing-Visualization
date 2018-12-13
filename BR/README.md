@@ -1,14 +1,14 @@
 ![img](https://github.com/Daikon-Sun/Routing-Visualization/raw/master/BR/BR.png)
-*Left: 2d_visualize.py Right: 3d_visualize.py*
+*Example visualization by 2d_visualize.py (left) and 3d_visualize.py (right).*
 
 # Visualization Tool for Bus Routing
 
 ## Required Packages and Versions
 - python3 >= 3.6
 - pyqtgraph >= 0.10.0
-- PyQt5 >= 5.11.2
+- **PyQt5 >= 5.11.2**
 - numpy
-- matplotlib
+- **matplotlib**
 
 ## File Descriptions
 - 2d_visiualize.py: 2-dimensional visualization that trys to mimic the style of Cadence Innovus.
@@ -79,10 +79,10 @@ python3 3d_visualize.py example/example
 ```
 
 ## Additional Informations
-Because 3d_visualize uses matplotlib, it cannot handle very-large scale inputs.
+Because 3d_visualize uses **matplotlib**, it cannot handle very-large scale inputs.
 
 It is suitable for inputs with less than 10^5-10^6 items (i.e. lines of text).
 
-On the other hand, 2d_visualize uses pyQt, so it's quite efficient.
+On the other hand, 2d_visualize uses **pyQt5**, so it's quite efficient.
 
 It can handle inputs up to 10^7-10^8 items, or even 10^9 if you have great CPUs.
