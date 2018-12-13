@@ -27,8 +27,8 @@ x0 y0 z0 [x1 y1 z1]
 ```
 Use three numbers to denote a point and six numbers to denote anything else.
 
-For obstalces, tracks, or anything else that does not belong to a bus and bit,
-use '\_\_ALL\_\_' to replace bus_name and bit_name.
+For obstalces, tracks, or anything else that does not belong to a bus and bit, use a unified name for simplicity.
+For example, use '\_\_ALL\_\_' to replace bus_name and 'ALL' to bit_name.
 
 Example file formats can be found in the directory `example`.
 
