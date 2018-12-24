@@ -52,7 +52,6 @@ Each entry in *vis* is formatted as:
 - linewidth: the linewidth for line items.
 
 ## Example
-Try to type one of the followings!
 ```
 python3 3d_visualize.py example/example net1230
 ```

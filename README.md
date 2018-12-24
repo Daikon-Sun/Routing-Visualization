@@ -1,5 +1,5 @@
 ![img](https://github.com/Daikon-Sun/Routing-Visualization/raw/master/IDR+BR.png)
-*Example visualizations in IDR (left) and BR (right).*
+<div style="text-align: right"> *Example visualizations in IDR (left) and BR (right).* </div>
 
 # Visualization Tools for Physical Design Routing
 Two sets of visualization tools written in python3 for routing in physical design.
